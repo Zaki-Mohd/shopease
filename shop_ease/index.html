@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <!-- Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ShopEase</h1>
+        <div class="header-controls">
+            <input type="text" class="search-bar" placeholder="Search for products..." id="search-input">
+            <a href="#cart" id="cart-logo">
+                <button class="cart-icon" id="cart-button">🛒</button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container" id="products"></div>
+
+    <div class="cart" id="cart">
+        <h3>Cart</h3>
+        <div id="cart-items"></div>
+        <div class="price-details" id="price-details">
+            <h3>Price Details</h3>
+            <ul>
+                <li>Total MRP: <span id="total-mrp">₹0</span></li>
+                <li>Coupon Discount: <span id="coupon-discount">₹0</span></li>
+                <li>Platform Fee: <span id="platform-fee">₹0</span></li>
+                <li>Shipping Charges: <span id="shipping-charges">₹0</span></li>
+                <li>Total Amount: <span id="total-amount">₹0</span></li>
+            </ul>
+            <button id="place-order" disabled>Place Order</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

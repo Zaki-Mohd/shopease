@@ -1,0 +1,206 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECE7E2;
+}
+
+/* Header Styling */
+header {
+    background-color: #4A7766;
+    color: #ECE7E2;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Styling the ShopEase logo */
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ECE7E2;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Controls (Search bar & Cart) */
+.header-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.search-bar {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Container for Products */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+/* Product Styling */
+.product {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 0 1 calc(23% - 2rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    margin-bottom: 1rem;
+}
+
+.product h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.product p {
+    margin: 0;
+}
+
+.product .rating {
+    color: gold;
+}
+
+.product .price {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Add to Cart Button */
+.product button {
+    background-color: #4A7766;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #3a6152;
+}
+
+/* Cart and Price Details Styling */
+.cart, .price-details {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 0 1 calc(40% - 2rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Item Styling */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.cart-item img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item .item-details {
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+.cart-item .item-details h3 {
+    margin: 0;
+}
+
+.cart-item .item-details p {
+    margin: 0;
+}
+
+/* Quantity Controls in Cart */
+.cart-item .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item .quantity button {
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.cart-item .quantity button:hover {
+    background-color: #ddd;
+}
+
+.cart-item .price {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.cart-item .remove {
+    cursor: pointer;
+    color: #4A7766;
+    margin-left: 10px;
+}
+
+/* Price Details */
+.price-details h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.price-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-details li {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Place Order Button */
+.price-details button {
+    background-color: #4A7766;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.price-details button:hover {
+    background-color: #3a6152;
+}
